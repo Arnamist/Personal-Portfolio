@@ -1,0 +1,30 @@
+.font_style
+{
+    font-size:medium; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-weight:500px;
+}
+  
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr
+{
+    margin: 30px;
+}
+
+.row > .col
+{
+    padding: 20px 30px;
+}
+
+div > h5
+{
+    text-decoration: underline;
+}
+.flex-container > a
+{
+    padding: 0 5px;
+}
