@@ -3,10 +3,6 @@ table
     width: 100%;
     border-collapse: collapse;
 }
-tr
-{
-    margin: 30px;
-}
 
 .footerItem
 {
@@ -17,11 +13,27 @@ tr
     padding: 0 5px;
 }
 
+body
+{
+  background-color:rgb(35, 35, 35);
+}
+
 .h1
 {
   padding: 15px 30px;  
   text-decoration: underline;
   text-align: center;
+}
+
+.mainContent
+{
+  color:yellow;
+  padding:30px; 
+  width: 70%; 
+  height: 100%; 
+  margin:auto; 
+  background-color:black;  
+  font-family:'Courier New';
 }
 
 .leftcolumn 
@@ -39,7 +51,7 @@ tr
 
 .img 
 {
-  background-color: #aaa;
+  background-color: black;
   width: 100%;
   padding: 2px;
   display:block;
@@ -49,11 +61,14 @@ tr
 
 .card 
 {
-   background-color: white;
+   background-color:lightgoldenrodyellow;
    padding: 15px;
    margin-top: 20px;
 }
-
+.card h2, h6
+{
+  font-weight: bold;
+}
 .row:after
 {
   content: "";
@@ -67,4 +82,50 @@ tr
   text-align: center;
   background: #ddd;
   margin-top: 20px;
+}
+
+#gallery 
+{
+  line-height:0;
+  -webkit-column-count:5; /* split it into 5 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:5;
+  -moz-column-gap:5px;
+  column-count:5;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% 
+  !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+}
+
+.inst
+{
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.zoom-without-container 
+{
+  transition: transform .2s;
+  margin: 0 auto;
+  width: 100%;
+  
+}
+.zoom-without-container img
+{
+	width:60%;
+  height: auto;
+  border: 2px solid black;
+}
+.zoom-without-container:hover 
+{
+  transform: scale(2);
 }

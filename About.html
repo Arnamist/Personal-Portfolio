@@ -13,12 +13,11 @@
     </head>
 
    
-    <body style="background-color:black;">
-        <iframe id="header" src="./Components/Header.html" width="100%" height="96px"></iframe> 
-
+    <body>
+      <iframe id="header" src="./Components/Header.html" width="100%" height="100px"></iframe> 
         <main style="background-image:url(./Images/background.jpg);  background-repeat: no-repeat;  background-size: cover">
-            <div style="height: 1250px;">
-                <div style="padding:10px; width: 70%; height: 100%; margin:auto; background-color:black; color:white;  font-family:'Trebuchet MS', 'Lucida Sans Unicode';">
+            <div style="height: 140%;">
+                <div class="mainContent">
                     <div class="h1">
                         <h2>Who am I?</h2>
                     </div>
@@ -41,7 +40,7 @@
                         </div>
                         <div class="rightcolumn">
                           <div class="card">
-                            <h2>Hobbies?</h2>
+                            <h6>Hobbies?</h6>
                             <img  class="img" style="height:100px;" src="./Images/coffee.jpg" alt="Logo">
                             <p>Self proclaimed foodie, learned to cook during COVID lockdown. Gained additional 8kgs and now am into exercising and daily workouts. I love good food, video games, outdoor sports, tech news, philosophy and a warm cup of Java in the morning.</p>
                           </div>
@@ -50,11 +49,13 @@
                             <iframe width="200" height="130" src="https://www.youtube.com/embed/MRJ3WfVe31U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                          
                           </div>
                           <div class="card">
-                            <h3>Latest Event</h3>
-                            <img  class="img" style="height:200px;" src="./Images/graduation2.jpg" alt="Logo">
+                            <h6>Double-Click to visit my gallery</h6>
+                            <div class="inst">
+                              <img  class="img" style="height:200px;" src="./Images/graduation2.jpg" alt="Logo">            
+                            </div>                                            
                           </div>
                           <div class="card">
-                            <h3>Get in touch</h3>
+                            <h6>Get in touch</h6>
                            <p class="footerItem">cyrusbajr@gmail.com</p>
                           </div>
                         </div>
@@ -64,5 +65,11 @@
         </main>
         
         <iframe id="footer" src="./Components/Footer.html" width="100%" height="130px"></iframe> 
+
+        <script>
+          document.querySelector('.inst').addEventListener('dblclick', function (e) {
+            window.location.href = "./Gallery.html";
+          });
+        </script>
     </body>
 </html>
